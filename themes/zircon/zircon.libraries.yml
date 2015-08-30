@@ -1,0 +1,43 @@
+base:
+  version: 8.0.0-beta9
+  css:
+    theme:
+      includes/bootstrap/css/bootstrap.css: {}
+      includes/bootstrap/css/bootstrap-theme.css: {}
+      includes/fonts/oswald_regular/stylesheet.css: {}
+      includes/fontawesome/css/font-awesome.min.css: {}
+      includes/slick/slick/slick.css: {}
+      includes/slick/css/style.css: {}
+      includes/monokai/monokai.min/css: {}
+      css/html.css: {}
+      css/page.css: {}
+      css/block.css: {}
+      css/view.css: {}
+      css/slideshow.css: {}
+      css/responsive.css: {}
+      css/print.css: { media: print }
+  js:
+    includes/js/jquery.smooth-scroll.js: {}
+    includes/jssor/js/jssor.core.js: {}
+    includes/jssor/js/jssor.utils.js: {}
+    includes/jssor/js/jssor.slider.js: {}
+    includes/slick/slick/slick.js: {}
+    includes/bootstrap/js/bootstrap.js: {}
+    js/slideshow.js: {}
+    js/carousel.js: {}
+    js/zircon.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/jquery.intrinsic
+
+maintenance_page:
+  version: VERSION
+  css:
+    theme:
+      css/maintenance-page.css: {}
+  dependencies:
+    - system/maintenance
+    - zircon/base
